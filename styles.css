@@ -1,0 +1,3182 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+.body {
+    margin:0;
+    padding: 0;
+    background-color: rgb(243, 250, 250);
+}
+#top-nav {
+    width: 100%;
+    height: 3rem;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 0px 10px 1px rgb(255, 255, 255);
+    z-index: 10;
+}
+.top-nav{
+    display: flex;
+    flex-direction: row;
+    gap:3.5rem;
+    margin: 0rem 0rem 0rem 2rem;
+    padding-top: 10px;
+    flex-wrap: wrap;
+}
+.top-nav #logo a img {
+ height: 22px;
+}
+.top-nav .vl {
+    border-left: 1px solid rgb(0, 0, 0);
+  height: 1.5rem;
+  position: absolute;
+  margin-left: 9.9rem;
+  top: 19.5%;
+}
+.nav {
+    display:inline-block;
+}
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+.nav ul li {
+    display: inline-block;
+}
+.nav ul li a {
+    text-decoration: none;
+    color: rgb(40, 39, 39);
+    font-size: 16.5px;
+    font-weight: 400;
+}
+.nav ul .ft a {
+    font-size: 17px;
+    font-weight: 500;
+    color:black;
+}
+.nav ul li a:hover {
+    border-bottom: 2px solid rgb(120, 119, 119);
+    padding-bottom: 4px;
+}
+#top-nav button {
+border:none;
+background-color:white;
+margin: 0rem 0rem 1.75rem 2rem;
+color: rgb(40, 39, 39);
+font-size: 17px;
+font-weight: 400;
+}
+#top-nav button a:hover{
+    border-bottom: 2px solid rgb(120, 119, 119);
+    padding-bottom: 4px;
+}
+#top-nav button a span {
+    font-size: 22px;
+    vertical-align: middle;
+    margin-left: 5px;
+    transform: rotateY(180deg);
+}
+/*the main body part*/
+.center-main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin:6rem 1rem 0rem 0rem;
+    flex-wrap: wrap;
+}
+.center-main h1{
+    font-size: 56px;
+    font-weight: 400;
+}
+.center-main h1 span{
+    background-image: linear-gradient(to right, #7e1ec3, #3e25e2, #02aeb1);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+.center-main p {
+    font-size: 27px;
+    font-weight: 400;
+}
+.second-main{
+    margin:2rem 0rem 0rem 0rem;
+}
+.second-main .text{
+   width: 46rem;
+    height: 3.15rem;
+    border-radius: 25px;
+    border: 1px solid rgb(97, 97, 97);
+    text-align: left;
+    padding-left: 20px;
+}
+::placeholder{
+    color: rgb(159, 159, 159);
+    font-size: 16.5px;
+}
+.second-main a span {
+    color: rgb(65, 65, 65);
+    font-size: 28px;
+    position: relative;
+    transform: translate(-3rem, 0.6rem);
+}
+section .grid {
+    display: grid;
+    grid-template-columns: 41rem 41rem;
+    gap:2.8rem;
+    margin:4rem 0rem 0rem 3rem;
+    
+}
+section .grid .all-one {
+background-image: linear-gradient( to bottom right, rgb(241, 241, 241),rgb(235, 250, 255));
+height: 30rem;
+border-radius: 15px;
+}
+.grid .all-two {
+    background-color: rgb(237, 237, 237);
+    height: 30rem;
+    border-radius: 15px;
+}
+.grid .all-three {
+    background-color: rgb(237, 237, 237);
+    height: 23rem;
+    border-radius: 15px;
+}
+.grid .four {
+    background-image: linear-gradient( to bottom right, rgb(243, 222, 251),rgb(220, 246, 254));
+    height: 23rem;
+    border-radius: 15px;
+}.grid .all-one {
+    display: flex;
+    flex-direction: row;
+}
+.grid .one-img img {
+    width: 19rem;
+    height: 28rem;
+     margin: 4rem 0rem 0rem 0rem;
+    background-size:cover;
+}
+.grid .all-one .one .sub-one{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 3rem -3rem 0rem 3rem;
+    width:20rem;
+    flex-wrap: wrap;
+}
+.grid .all-one .one .sub-one h2{
+    line-height: 2.3rem;
+    font-size: 33px; 
+    font-weight: 400;
+}
+.grid .all-one .one .sub-one p{
+    font-weight: 400;
+    font-size: 17px;
+}
+.grid .one button {
+    background-color: rgb(21, 20, 20);
+    border-radius: 7px;
+    border: 1px solid black;
+    width: 17rem;
+    padding:7px 3px 8px 3px;
+    font-size: 19px;
+    font-weight: 500;
+    margin: 2rem 0rem 0rem 3rem;
+    transition: all 0.25s linear 0.09s;
+    cursor:pointer;
+}
+.grid .one a {
+    text-decoration: none;
+    color: white;
+}
+.grid .one button:hover {
+    background-color: #2a17a4;
+    border: 1px solid #2a17a4;
+    box-shadow: 0px 1px 3px 2px rgb(180, 180, 180);
+}
+.grid .one .sub-one-link{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    margin: 2.15rem 0rem 0rem 3rem;
+} 
+.grid .one .sub-one-link a{
+    color: #006dcc;
+    font-size: 15px;
+    font-weight: 400;
+    transition: transform 0.2s ease-in-out;
+}
+.grid .one .sub-one-link a:hover{
+    color: #7e1ec3;
+    transform:translateY(-0.1rem);
+}
+.grid .all-two {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.grid .two-img {
+    background: url("images/27c0ebe4a6b9466f940de28f0e9c100a.png") no-repeat;
+   width: 21rem;
+    min-height: 33rem;
+    margin: -3rem -2rem 0rem 0rem;
+    background-size: cover;
+}
+.grid .two .sub-two {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 3.5rem 0rem 0rem 2rem;
+    width:18rem;
+    flex-wrap: wrap;
+}
+.grid .two .sub-two p{
+    font-weight: 400;
+    font-size: 1rem;
+}
+.grid .two .sub-two h2{
+    min-width:200px;
+    line-height: 2.3rem;
+    font-size: 33px;
+     font-weight: 400;
+}
+.grid .two button {
+    background-color: rgb(21, 20, 20);
+    border-radius: 7px;
+    border: 1px solid black;
+    width: 13.5rem;
+    padding: 5px 3px 8px 3px;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 2rem 0rem 0rem 2rem;
+    transition: all 0.25s linear 0.09s;
+    cursor:pointer;
+}
+.grid .two a {
+    text-decoration: none;
+    color: white;
+}
+.grid .two button:hover {
+    background-color: #2a17a4;
+    border: 1px solid #2a17a4;
+    box-shadow: 0px 1px 3px 2px rgb(180, 180, 180);
+}
+.grid .two .sub-two-link{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    margin: 2.15rem 0rem 0rem 3rem;
+} 
+.grid .two .sub-two-link a{
+    color: #006dcc;
+    font-size: 15px;
+    font-weight: 400;
+    transition: transform 0.2s ease-in-out;
+}
+.grid .two .sub-two-link a:hover{
+    color: #7e1ec3;
+    transform:translateY(-0.1rem);
+}
+
+.grid .all-three {
+    display: flex;
+    flex-direction: row;
+    gap: 0.1rem;
+}
+.grid .three-img img {
+    width: 8.5rem;
+    height: 10rem;
+    margin: 7rem 0rem 0rem 5rem;
+    padding: 0rem 0rem 0rem 0rem;
+    background-size:cover;
+}
+.grid .three .sub-three{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 3rem 0rem 0rem 3rem;
+    width:19rem;
+    flex-wrap: wrap;
+}
+.grid .three .sub-three p{
+    font-weight: 400;
+    font-size: 17px;
+}
+.grid .three .sub-three h2{
+    font-size: 33px;
+     font-weight: 400;
+}
+.grid .three button {
+    background-color: rgb(21, 20, 20);
+    border-radius: 7px;
+    border: 1px solid black;
+    width: 13.5rem;
+    padding: 7px 5px 8px 5px;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 2rem 0rem 0rem 3rem;
+    transition: all 0.25s linear 0.09s;
+    cursor:pointer;
+}
+.grid .three a {
+    text-decoration: none;
+    color: white;
+}
+.grid .three button:hover {
+    background-color: #2a17a4;
+    border: 1px solid #2a17a4;
+    box-shadow: 0px 1px 3px 2px rgb(180, 180, 180);
+}
+.grid .three .sub-three-link{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    margin: 1.8rem 0rem 0rem 3rem;
+    flex-wrap: wrap;
+} 
+.grid .three .sub-three-link a{
+    color: #006dcc;
+    font-size: 15px;
+    font-weight: 400;
+    transition: transform 0.2s ease-in-out;
+}
+.grid .three .sub-three-link a:hover{
+    color: #7e1ec3;
+    transform:translateY(-0.1rem);
+}
+.grid .four .sub-four{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin: 3rem 1rem 0rem 1rem;
+    flex-wrap: wrap;
+}
+.grid .four .sub-four p{
+ margin: 0.3rem 5rem 0rem 3rem;
+ text-align: center;
+ font-weight: 400;
+ font-size: 18px
+}
+.grid .four .sub-four h2{
+    font-size: 35px; 
+    font-weight: 400;
+}
+.grid .four button {
+    background-color: rgb(21, 20, 20);
+    border-radius: 7px;
+    border: 1px solid black;
+    width: 15.5rem;
+    padding: 7px 5px 8px 5px;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 2rem 0rem 0rem 12rem;
+    transition: all 0.25s linear 0.09s;
+    cursor:pointer;
+}
+.grid .four a {
+    text-decoration: none;
+    color: white;
+}
+.grid .four button:hover {
+    background-color: #2a17a4;
+    border: 1px solid #2a17a4;
+    box-shadow: 0px 1px 3px 2px rgb(180, 180, 180);
+}
+.grid .three button:hover {
+    background-color: #2a17a4;
+    border: 1px solid #2a17a4;
+    box-shadow: 0px 1px 3px 2px rgb(180, 180, 180);
+}
+.grid .four .sub-four-link{
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+    justify-content: center;
+    margin-top: 3rem;
+} 
+.grid .four .sub-four-link a{
+    color: #006dcc;
+    font-size: 15px;
+    font-weight: 400;
+    transition: transform 0.2s ease-in-out;
+}
+.grid .four .sub-four-link a:hover{
+    color: #7e1ec3;
+    transform:translateY(-0.1rem);
+}
+section .flex{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+   margin: 3rem 0rem 0rem 3rem;
+}
+.flex .first {
+    background-color: rgb(237, 246, 252);
+    width:85rem;
+    height: 34rem;
+    text-align: center;
+    margin-right: 6rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.flex .second {
+    background-image: linear-gradient( to right, rgb(235, 235, 235),rgb(239, 249, 255));
+    width:85rem;
+    height: 36rem;
+    text-align: center;
+    margin-right: 6rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.flex .third{
+    background-image: linear-gradient( to  right,  rgb(235, 235, 235),rgb(239, 249, 255));
+    width:85rem;
+    height: 43rem;
+    text-align: center;
+    margin-right: 6rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+.flex .fourth {
+    background-image:linear-gradient(to left, rgb(192, 218, 255), rgb(230, 239, 252),rgb(192, 218, 255));
+    width:85rem;
+    height: 34rem;
+    text-align: center;
+    margin-right: 6rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+.flex .first .sub-first {
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+    width:25rem;
+    text-align: left;
+    margin: 6rem 0rem 0rem 3rem;
+    flex-wrap: wrap;
+}
+.flex .first-img {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    width:51.5rem;
+    height: 28.5rem;
+    margin:3rem 0rem 0rem 3rem;
+    border-radius:17px;
+    outline: 0.01px solid rgb(225, 225, 225);
+    box-shadow: 0px 0.6px 16px 1px rgb(213, 213, 213);
+}
+.flex .first .sub-first h2{
+    font-size: 33px;
+    font-weight: 400;
+   }
+   .flex .first .sub-first p{
+   font-weight: 400; 
+   font-size: 18px;
+  }
+.flex .first-img img{
+    position: relative;
+    width:49.9rem;
+    height: 27rem;
+    border-radius: 6px;
+    margin:0.7rem 0.5rem 0.5rem 0.5rem;
+}
+.flex .first button {
+    background-color: rgb(21, 20, 20);
+    border-radius: 7px;
+    border: 1px solid black;
+    width: 8.5rem;
+    padding: 7px 5px 8px 5px;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 1rem 0rem 0rem 0rem;
+    transition: all 0.25s linear 0.09s;
+    cursor:pointer;
+}
+.flex .first a {
+    text-decoration: none;
+    color: white;
+}
+.flex .first button:hover {
+    background-color: #2a17a4;
+    border: 1px solid #2a17a4;
+    box-shadow: 0px 1px 3px 2px rgb(180, 180, 180);
+}
+.flex .second .sub-second{
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 28rem;
+    text-align: left;
+    margin: 5rem 0rem 0rem 3rem;
+    flex-wrap: wrap;
+}
+.flex .second .second-img img {
+    width:48rem;
+    height: 30rem;
+    padding: 2rem 0rem 0rem 3rem;
+    background-size: contain;
+}
+.flex .second .sub-second p{
+    font-weight: 400; 
+     font-size: 18px;
+}
+.flex .second .sub-second h2{
+    font-size: 33px;
+    font-weight: 400;
+   }
+.flex .second button {
+    background-color: rgb(21, 20, 20);
+    border-radius: 7px;
+    border: 1px solid black;
+    width: 16rem;
+    padding: 7px 5px 8px 5px;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 1rem 0rem 0rem 0.5rem;
+    transition: all 0.25s linear 0.09s;
+    cursor:pointer;
+    float: left;
+}
+.flex .second a {
+    text-decoration: none;
+    color: white;
+}
+.flex .second button:hover {
+    background-color: #2a17a4;
+    border: 1px solid #2a17a4;
+    box-shadow: 0px 1px 3px 2px rgb(180, 180, 180);
+}
+.flex .second .sub-second-link{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    margin: 1rem 0rem 0rem 1rem;
+    text-align: left;
+} 
+.flex .second .sub-second-link a{
+    color: #006dcc;
+    font-size: 15px;
+    font-weight: 400;
+    transition: transform 0.2s ease-in-out;
+}
+.flex .second .sub-second-link a:hover{
+    color: #7e1ec3;
+    transform:translateY(-0.1rem);
+}
+.flex .third .sub-third{
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+    width:fit-content;
+    text-align: left;
+    margin: 9rem 0rem 0rem 3rem;
+    flex-wrap: wrap;
+}
+.flex .third-img {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    width:50rem;
+    height: 35rem;
+    margin:3rem 0rem 0rem 2rem;
+    border-radius:17px;
+    outline: 0.01px solid rgb(225, 225, 225);
+    box-shadow: 0px 0.6px 16px 1px rgb(213, 213, 213);
+}
+
+.flex .third .sub-third h2{
+    width: 24rem;
+    font-size: 33px;
+    font-weight: 400;
+   }
+   .flex .third .sub-third p{
+    width: 26rem;
+    font-weight: 400; 
+    font-size: 18px;
+   }
+.flex .third-img img{
+    position: relative;
+    width:48rem;
+    height: 33.5rem;
+    border-radius: 6px;
+    margin:0.7rem 0.5rem 0.5rem 0.5rem;
+}
+.flex .third button {
+    background-color: rgb(21, 20, 20);
+    border-radius: 7px;
+    border: 1px solid black;
+    width: 20rem;
+    padding: 7px 5px 8px 5px;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 1rem 0rem 0rem 0.3rem;
+    transition: all 0.25s linear 0.09s;
+    cursor:pointer;
+    box-shadow: 1px 1px 1px rgb(74, 74, 74);
+}
+.flex .third a {
+    text-decoration: none;
+    color: white;
+}
+.flex .third button:hover {
+    background-color: #2a17a4;
+    border: 1px solid #2a17a4;
+    box-shadow: 0px 1px 3px 2px rgb(180, 180, 180);
+}
+.flex .third .sub-third-link{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    margin: 1rem 0rem 0rem 0.3rem;
+    text-align: left;
+    flex-wrap: wrap;
+} 
+.flex .third .sub-third-link a{
+    color: #006dcc;
+    font-size: 15px;
+    font-weight: 400;
+    transition: transform 0.2s ease-in-out;
+}
+.flex .third .sub-third-link a:hover{
+    color: #7e1ec3;
+    transform:translateY(-0.1rem);
+}    
+.flex .fourth .sub-fourth{
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: left;
+    width: 25rem;
+    margin: 6rem 0rem 0rem 3rem;
+    flex-wrap: wrap;
+}
+.flex .fourth-img {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    width:50rem;
+    height: 29rem;
+    margin:2.5rem 0rem 0rem 2.5rem;
+    border-radius:17px;
+    outline: 0.01px solid rgb(225, 225, 225);
+    box-shadow: 0px 0.6px 16px 1px rgb(213, 213, 213);
+    background-size:contain;
+    background-repeat: repeat;
+}
+.flex .fourth-img img{
+    position: relative;
+    width:48.5rem;
+    height: 27.5rem;
+    border-radius: 6px;
+    margin: 0.7rem 0.5rem 0.5rem 0.5rem;
+    background-size: cover;
+}
+.flex .fourth .sub-fourth h2{
+    font-size: 33px;
+    font-weight: 400;
+   }
+   .flex .fourth .sub-fourth p{
+    font-weight: 400; 
+    font-size: 18px;
+   }
+.flex .fourth button {
+    background-color: rgb(21, 20, 20);
+    border-radius: 7px;
+    border: 1px solid black;
+    width: 12rem;
+    padding: 7px 5px 8px 5px;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 1rem 0rem 0rem 0.2rem;
+    transition: all 0.25s linear 0.09s;
+    cursor:pointer;
+}
+.flex .fourth a {
+    text-decoration: none;
+    color: white;
+}
+.flex .fourth button:hover {
+    background-color: #2a17a4;
+    border: 1px solid #2a17a4;
+    box-shadow: 0px 1px 3px 2px rgb(180, 180, 180);
+}
+.flex .fourth .sub-fourth-link{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    margin: 1rem 0rem 0rem 0.3rem;
+    text-align: left;
+    flex-wrap: wrap;
+} 
+.flex .fourth .sub-fourth-link a{
+    color: #006dcc;
+    font-size: 15px;
+    font-weight: 400;
+    transition: transform 0.2s ease-in-out;
+}
+.flex .fourth .sub-fourth-link a:hover{
+    color: #7e1ec3;
+    transform:translateY(-0.1rem);
+}
+.last-section .slide-text p {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 5rem 0rem 2rem 3.5rem;
+}
+.last-section .slide {
+ display: flex;
+ flex-direction: row;
+ gap: 2.5rem;
+ margin: 2rem 0rem 3rem 3.5rem;
+ flex-wrap: wrap;
+}
+.slide .slide-one {
+    background-color: rgb(240, 240, 240);
+    width: 20rem;
+    height: 19rem;
+    border-radius: 10px;
+    text-align: left;
+    padding:2rem 2rem 2rem 1.5rem; 
+    transition: all 0.3s ease-in-out ;
+}
+.slide .slide-one:hover {
+ transform: scale(1.05);
+ box-shadow: 2px 2px 10px 1px rgb(195, 195, 195);
+}
+.slide .slide-one a {
+ text-decoration: none;
+ color: black;
+}
+.slide .slide-one h4{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 0.7rem;
+}
+.slide .slide-one p {
+width: 18rem;
+font-size: 18px;
+font-weight: 400;
+padding-bottom: 1rem;
+}
+.slide .slide-one span {
+    color: #0033cc;
+}
+.slide .slide-two {
+    text-align: left;
+    padding:2rem 2rem 2rem 1.5rem; 
+    background-color: rgb(240, 240, 240);
+    width: 20rem;
+    height: 19rem;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out ;
+}
+.slide .slide-two:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 10px 1px rgb(195, 195, 195);
+}
+.slide .slide-two a {
+ text-decoration: none;
+ color: black;
+}
+.slide .slide-two h4{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 0.7rem;
+}
+.slide .slide-two p {
+width: 16rem;
+font-size: 17px;
+font-weight: 400;
+padding-bottom: 5.5rem;
+}
+.slide .slide-two span {
+    color: #0033cc;
+}
+.slide .slide-three {
+    text-align: left;
+    padding:2rem 2rem 2rem 1.5rem; 
+    background-color: rgb(240, 240, 240);
+    width: 20rem;
+    height: 19rem;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out ;
+}
+.slide .slide-three:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 10px 1px rgb(195, 195, 195);
+}
+.slide .slide-three a {
+ text-decoration: none;
+ color: black;
+}
+.slide .slide-three h4{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 0.7rem;
+}
+.slide .slide-three p {
+width: 16rem;
+font-size: 17px;
+font-weight: 400;
+padding-bottom: 5.5rem;
+}
+.slide .slide-three span {
+    color: #0033cc;
+}
+footer .first-footer{
+    background-color: rgb(43, 42, 42);
+    width:cover;
+    height: 5rem;
+    margin:3rem 0rem 1rem 0rem; 
+}
+.first-footer p {
+ color:rgb(255, 255, 255);
+ padding: 2rem 0rem 2rem 4rem;
+ font-size: 11px;
+ font-weight: 200;
+}
+.footer-column{
+    display: flex;
+    flex-direction: row;
+    gap:5rem;
+    margin: 0rem 0rem 2rem 4rem;
+    flex-wrap: wrap;
+}
+.column-list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    list-style-type: none;
+    margin:0.7rem 0rem 0rem 0rem
+}
+.column-list ul li a{
+    text-decoration: none;
+    color: rgb(101, 101, 101); 
+    font-size: 12px;
+    font-weight: 400;
+}
+.column-list ul li a:hover {
+    color: rgb(23, 23, 23);
+    text-decoration: underline;
+}
+.footer-row .row-list{
+    display: inline-flex;
+    flex-direction: row;
+    gap:3.5rem;
+    margin:0rem 0rem 0rem 2rem;
+    flex-wrap: wrap;
+}
+.row-list .list-one {
+display: inline-flex;
+flex-direction: row;
+list-style-type: none;
+gap:0.6rem;
+margin:0rem 0rem 0rem 2rem;
+flex-wrap: wrap;
+}
+.row-list .list-one a {
+    text-decoration: none;
+    color: rgb(101, 101, 101); 
+    font-size: 12px;
+    font-weight: 400;
+}
+.row-list .list-one a span {
+    vertical-align: middle;
+    margin-right: 8px;
+    font-size: 30px;
+}
+.row-list .list-two {
+    display: flex;
+    flex-direction: row;
+   list-style-type: none;
+   gap:2rem; 
+   flex-wrap: wrap;
+   margin: 0rem 0rem 0rem 2rem;
+}
+.row-list .list-two li:last-child {
+    margin-top: 5px;
+}
+.row-list .list-two a {
+    text-decoration: none;
+    color: rgb(101, 101, 101); 
+    font-size: 12px;
+    font-weight: 400;
+}
+@media screen and (max-width:1450px){
+    #top-nav{
+        width: cover;
+       }
+       .nav ul{
+        gap:1rem;
+       }
+       .nav ul li a{
+        font-size: 15px;
+       }
+       #top-nav button {
+        margin-left: 4rem;
+       } 
+       .center-main h1{
+        font-size: 50px;
+       }
+       .center-main p{
+        font-size: 22px;
+       }
+       .second-main .text {
+        width: 43rem;
+       }
+       ::placeholder{
+        font-size: 15px;
+       }
+       section .grid {
+        display: grid;
+        grid-template-columns: 39rem 39rem;
+        gap:2.6rem;
+        margin:4rem 0rem 0rem 3rem;
+    }
+      section .flex {
+        margin:3rem 0rem 0rem 4.5rem;
+    }
+    .flex .first {
+    width:80.5rem;
+    }
+    .flex .first-img{
+        width:46.5rem;
+    }
+    .flex .first-img img{
+        width:45rem;
+    }
+    .flex .second {
+        width:80.5rem;
+    }
+    .flex .third {
+        width:80.5rem;
+    }
+    .flex .third-img{
+        width:46.5rem
+    }
+    .flex .third-img img{
+        width:45rem;
+    }
+    .flex .fourth {
+        width:80.5rem;
+    }
+    .flex .fourth-img{
+        width:46.5rem
+    }
+    .flex .fourth-img img{
+        width:45rem;
+    }
+}
+@media screen and (max-width:1400px){
+
+    #top-nav{
+        width: cover;
+       }
+       .nav ul{
+        gap:1.5rem;
+       }
+       .nav ul li a{
+        font-size: 15px;
+       }
+       #top-nav button {
+        margin:0rem 0rem 0rem 2rem;
+       } 
+    section .grid {
+        display: grid;
+        grid-template-columns:38rem 38rem;
+        gap:2.4rem;
+        margin:4rem 0rem 0rem 2.5rem;
+    }
+    
+    section .flex {
+        margin: 3rem 0rem 0rem 2.5rem; 
+    }
+    .flex .first {
+        width:78.5rem;
+        }
+        .flex .first-img{
+            width:45.3rem;
+        }
+        .flex .first-img img{
+            width:43.5rem;
+        }
+        .flex .second {
+            width:78.5rem;
+        }
+        .flex .second .second-img img{
+            width:45rem;
+            height: 30rem;
+            margin:4rem 2rem 0rem 4rem;
+        }
+        .flex .third {
+            width:78.5rem;
+        }
+        .flex .third-img{
+            width:44rem
+        }
+        .flex .third-img img{
+            width:42.5rem;
+        }
+        .flex .fourth {
+            width:78rem;
+        }
+        .flex .fourth-img{
+            width:44rem
+        }.flex .fourth-img img{
+            width:42.5rem;
+        }
+        
+}
+@media screen and (max-width: 1350px){
+    #top-nav{
+        width: cover;
+       }
+       .nav ul{
+        gap:1.5rem;
+       }
+       .nav ul li a{
+        font-size: 15px;
+       }
+       #top-nav button {
+        margin:0rem 0rem 0rem 0.5rem;
+        font-size: 14px ;
+       }
+       section .grid {
+        display: grid;
+        grid-template-columns:36.5rem 36.5rem;
+        gap:2.3rem;
+        margin:4rem 0rem 0rem 2.5rem;
+    }
+    .grid .all-one .one .sub-one{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 3rem -4rem 0rem 3rem;
+        width:19rem;
+        flex-wrap: wrap;
+    }
+    .grid .one-img img {
+        width: 19rem;
+        height: 28rem;
+         margin: 4rem 0rem 0rem -2rem;
+        background-size:contain;
+    }
+    .grid .all-three .sub-three{
+        width: 15rem;
+       }
+    .grid .three-img {
+        width: 6rem;
+        height: 9rem;
+        margin: 0rem 0rem 0rem 2rem;
+        background-size:80%;
+    }
+    .grid .three .sub-three p{
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .grid .all-three .three .sub-three h2{
+        font-size: 27px; 
+    }
+    .grid .three button {
+         width: 15rem;
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    }
+    .grid .four{
+        height: 23rem;
+       }
+    .grid .four .sub-four h2{
+        font-size: 25px; 
+        font-weight: 400;
+        margin:0rem 1.5rem 0rem 0rem;
+    }
+    .grid .four .sub-four p{
+        width: 28rem;
+        font-size: 18px;
+       }
+    .grid .four button {
+        margin: 2rem 0rem 0rem 11rem;
+    }
+    section .flex {
+        margin: 3rem 0rem 0rem 2.5rem;
+    }
+    .flex .first {
+        width:76rem;
+        }
+        .flex .first-img{
+            width:43rem;
+            padding:0rem 0rem 0rem 0rem 1rem;
+        }
+        .flex .first-img img{
+            width:41rem;
+        }
+        .flex .second {
+            width:76rem;
+        }
+        .flex .second .second-img img{
+            width:42rem;
+            height: 27rem;
+            margin:4rem 2rem 0rem 4rem;
+        }
+        .flex .third {
+            width:76rem;
+        }
+        .flex .third-img{
+            width:48rem;
+           margin-right:3rem;
+        }
+        .flex .third-img img{
+            width:42rem;
+        }
+        .flex .fourth {
+            width:76rem;
+        }
+        .flex .fourth .sub-fourth h2{
+            font-size: 30px;
+        }
+        .flex .fourth-img{
+            width:42rem;
+            margin-right: 3rem;
+        }
+        .flex .fourth-img img{
+            width:40rem;
+        }
+}
+@media screen and (max-width: 1300px){
+    #top-nav{
+        width: cover;
+       }
+       .nav ul{
+        gap:0.5rem;
+       }
+       .nav ul li a{
+        font-size: 15px;
+       }
+       .nav ul li.widden{
+        gap: 0.4rem;
+        margin:0rem 0rem 0rem 1.5rem;
+       }
+       .nav ul li.to-remove{
+        display: none;
+       }
+       #top-nav button {
+        margin-left: 1.5rem;
+        font-size: 14px;
+       } 
+       section .grid {
+        display: grid;
+        grid-template-columns:35rem 35rem;
+        gap:2rem;
+        margin:4rem 0rem 0rem 1.5rem;
+    }
+    .grid .all-one .one .sub-one{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 3rem -4rem 0rem 3rem;
+        width:16rem;
+        flex-wrap: wrap;
+    }
+    .grid .one-img img {
+        width: 17rem;
+        height: 25rem;
+         margin: 4rem 0rem 0rem -2rem;
+        background-size:contain;
+    }
+    .grid .four button {
+        margin: 2rem 0rem 0rem 10rem;
+    }
+    section .flex {
+            margin: 3rem 0rem 0rem 1.5rem; 
+    }
+    .flex .first {
+        width:72rem;
+        }
+        .flex .first-img{
+            width:44rem;
+           margin: 3rem 0rem 0rem 3rem;
+            height: 26rem;
+        }
+        .flex .first .sub-first{
+            width: 20rem;
+        }
+        .flex .first .sub-first h2{
+            font-size: 27px;
+           }
+        .flex .first-img img{
+            width:42.5rem;
+            height: 24.5rem;
+        }
+        .flex .second {
+            width:73rem;
+        }
+        .flex .second .sub-second{
+            width: 20rem;
+        }
+        .flex .second .sub-second h2{
+            font-size: 27px;
+           }
+        .flex .second .second-img img{
+            width:50rem;
+            height: 30rem;
+            margin:4rem 0rem 0rem 0rem;
+        }
+        .flex .third {
+            width:73rem;
+        }
+        .flex .third .sub-third{
+            width: 20rem;
+        }
+        .flex .third .sub-third p{
+            width: 20rem;
+        }
+         .flex .third .sub-third h2{
+            font-size: 27px;
+           }
+        .flex .third-img{
+            width:44rem;
+            margin: 3rem 0rem 0rem 2rem;
+           height: 36rem;
+        }
+        .flex .third-img img{
+            width:42rem;
+            height: 34.5rem;
+        }
+        .flex .fourth {
+            width:73rem;
+            height: 32rem;
+        }
+        .flex .fourth-img{
+            width:40rem;
+           margin: 3rem 0rem 0rem 2rem;
+            height: 24rem;
+        }
+        .flex .fourth-img img{
+            width:38rem;
+            height: 22.5rem;
+        }
+    }
+@media screen and (max-width:1200px){
+    #top-nav{
+        width: cover;
+       }
+       .nav ul{
+        gap:0.7rem;
+       }
+       .nav ul li a{
+        font-size: 15px;
+       }
+       .nav ul li.widden{
+        margin:0rem 0rem 0rem 0.5rem;
+       }
+       .nav ul li.to-remove{
+        display: none;
+       }
+       #top-nav button {
+        margin:0rem 0rem 0rem 3rem;
+        font-size: 16px ;
+       } 
+       section .grid {
+        display: grid;
+        grid-template-columns:32rem 32rem;
+        gap:2rem;
+        margin:4rem 0rem 0rem 4rem;
+    } 
+    .grid .all-one .one .sub-one{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 3rem -0.5rem 0rem 3rem;
+        width:16em;
+        flex-wrap: wrap;
+    }
+    .grid .all-one .one .sub-one h2{
+        font-size: 27px;
+        line-height: normal;
+    }
+    .grid .one-img img {
+        width: 16rem;
+        height: 23rem;
+         margin: 6rem 0rem 0rem -2rem;
+        background-size:contain;
+    }
+    .grid .one button {
+        width: 13rem;
+        padding:6px 3px 6px 3px;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 1rem 0rem 0rem 3rem;
+    }
+    .grid .three-img {
+        min-width: 8.5rem;
+        min-height: 10rem;
+        margin: 0rem 2rem 0rem -2rem;
+        background-size:90%;
+    }
+    .grid .three .sub-three p{
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .grid .four .sub-four h2{
+        font-size: 26px; 
+        font-weight: 400;
+        margin: 0rem 1rem 0rem 0rem;
+    }
+    .grid .four .sub-four p{
+        font-size: 17px; 
+        font-weight: 400;
+        width:24rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+    .grid .four button {
+        margin: 2rem 0rem 0rem 8rem;
+    }
+    section .flex {
+        margin: 3rem 0rem 0rem 4rem;
+    }
+    .flex .first {
+        width:66rem;
+        height: 29rem;
+        }
+        .flex .first-img{
+            width:40rem;
+            margin:4rem 0rem 0rem 2rem;
+            height: 22rem;
+        }
+        .flex .first-img img{
+            width:38rem;
+            height: 20.5rem;
+        }
+        .flex .first .sub-first {
+            margin-top: 4rem;
+            width:18rem;
+           } 
+           .flex .first .sub-first h2{
+            font-size: 24px;
+           }
+        .flex .second {
+            width:66rem;
+            height:34rem;
+        }
+        .flex .second .sub-second {
+            width:20rem;
+            margin: 3rem 0rem 0rem 3rem;
+          } 
+          .flex .second .sub-second h2{
+            font-size: 24px;
+           }
+        .flex .second .second-img img{
+            width:38rem;
+            height: 25rem;
+            margin:5rem 0rem 0rem 3rem;
+        }
+        .flex .third {
+            width:66rem;
+            height: 36rem;
+        }
+        .flex .third .sub-third h2{
+            font-size: 28px;
+           }
+        .flex .third-img{
+            width:38rem;
+          margin:3rem 0rem 0rem 2rem;
+           height: 30rem;
+        }
+        .flex .third-img img{
+            width:36rem;
+            height: 28.5rem;
+        }
+        .flex .third .sub-third h2{
+            font-size: 27px;
+        }
+        .flex .third .sub-third {
+         margin: 4rem 0rem 0rem 3rem;
+        }   
+     .flex .fourth {
+            width:66rem;
+            height: 28rem;
+        }
+        .flex .fourth-img{
+            width:40rem;
+            margin:3rem 0rem 0rem 0rem;
+            height: 22rem;
+        }
+        .flex .fourth-img img{
+            width:38rem;
+            height: 20.5rem;
+        }
+        .flex .fourth .sub-fourth {
+            width:20rem;
+        }
+        .flex .fourth .sub-fourth h2{
+            font-size: 25px;
+           }
+        .flex .fourth .sub-fourth {
+            margin: 4rem 0rem 0rem 3rem;
+           } 
+        .last-section .slide-text p{
+            margin: 5rem 0rem 2rem 4.5rem;
+        }
+        .last-section .slide {
+            margin: 2rem 0rem 3rem 4.5rem;
+        }
+}
+@media screen and (max-width:1150px){
+    #top-nav{
+        width: 100%;
+       }
+       .nav ul{
+        gap:1rem;
+       }
+       .nav ul li a{
+        font-size: 15px;
+       }
+       .nav ul li.widden{
+        margin:0rem 0rem 0rem 0.2rem;
+       }
+       .nav ul li.to-remove{
+        display: none;
+       }
+       #top-nav button {
+        margin:0rem 0rem 0rem 0.2rem;
+        font-size: 16px ;
+       } 
+       .center-main h1{
+        font-size: 42px;
+        font-weight: 400;
+    }
+    .center-main p {
+        font-size: 21px;
+        font-weight: 400;
+    }
+    .second-main{
+        margin:2rem 0rem 0rem 0rem;
+    }
+    .second-main .text{
+       width: 43rem;
+        height: 3.15rem;
+        border-radius: 25px;
+        border: 1px solid rgb(97, 97, 97);
+        text-align: left;
+        padding-left: 20px;
+    }
+       section .grid {
+        display: grid;
+        grid-template-columns:31rem 31rem;
+        gap:2rem;
+        margin:4rem 0rem 0rem 3rem;
+    } 
+    .grid .all-one .one .sub-one{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 3rem -1rem 0rem 3rem;
+        width:15.5em;
+        flex-wrap: wrap;
+    }
+    .grid .one-img img {
+        width: 15rem;
+        height: 21rem;
+         margin: 8rem 0rem 0rem -2rem;
+        background-size:contain;
+    }
+    .grid .all-one .one .sub-one h2{
+        font-size: 27px; 
+    }
+ .grid .one button {
+    margin: 1rem 0rem 0rem 3rem;
+}
+.grid .two button {
+    width: 14rem;
+    padding: 0rem 2rem 0rem 2rem;
+}
+.grid .two-img {
+    min-width: 14rem;
+    min-height: 30rem;
+    margin: -2rem 0rem 0rem 0.5rem;
+    background-size: cover;
+}
+.grid .all-two .two .sub-two h2{
+    font-size: 27px; 
+}
+.grid .two .sub-two {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 3.5rem 0rem 0rem 2rem;
+    width:13rem;
+    flex-wrap: wrap;
+}
+ .grid .two button {
+  width:15rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+} 
+.grid .all-three{
+    height: 25rem;
+}
+.grid .all-three .sub-three{
+    width: 15rem;
+   }
+.grid .three-img {
+    width: 6rem;
+    height: 9rem;
+    margin: 2rem 0rem 0rem -3rem;
+    background-size:80%;
+}
+.grid .three .sub-three p{
+    font-weight: 400;
+    font-size: 16px;
+}
+.grid .all-three .three .sub-three h2{
+    font-size: 27px; 
+}
+.grid .three button {
+     width: 14rem;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+}
+.grid .four{
+    height: 25rem;
+   }
+.grid .four .sub-four h2{
+    font-size: 25px; 
+    font-weight: 400;
+}
+.grid .four button {
+    margin: 2rem 0rem 0rem 8rem;
+}
+section .flex {
+    margin: 3rem 0rem 0rem 3rem;
+}
+.flex .first {
+    width:64rem;
+    }
+    .flex .first-img{
+        width:38rem;
+        margin: 4rem 0rem 0rem 1rem;
+        height: 20rem;
+    }
+    .flex .first-img img{
+        width:36rem;
+        height: 18.5rem;
+    }
+    .flex .second {
+        width:64rem;
+    }
+    .flex .second .sub-second {
+        width:20rem;
+        margin: 2rem 0rem 0rem 3rem;
+      } 
+    .flex .second .second-img img{
+        width:37rem;
+        height: 24rem;
+        margin:5rem 0rem 0rem 2rem;
+    }
+    .flex .third {
+        width:64rem;
+    }
+    .flex .third .sub-third h2{
+        width:20rem;
+        font-size: 25px;
+       }
+       .flex .third .sub-third{
+        width:20rem;
+        margin: 3rem 0rem 0rem 3rem
+       }
+    .flex .third-img{
+        width: 38rem;
+       margin:4rem 0rem 0rem 0rem;
+       height: 28rem;
+    }
+    .flex .third-img img{
+        width:36rem;
+        height: 26.5rem;
+    }
+    .flex .third button {
+        width: 18rem;
+        padding: 7px 5px 7px 5px;
+        font-size: 17px;
+        font-weight: 400;
+        margin: 1rem 0rem 0rem 0.3rem;
+    }
+    .flex .fourth {
+        width:64rem;
+        height: 35rem;
+    }
+    .flex .fourth .sub-fourth{
+        margin:3rem 0rem 0rem 3rem;
+    }
+    .flex .fourth .sub-fourth h2{
+        font-size: 28px;
+        width:13rem;
+    }
+    .flex .fourth-img{
+        width:37rem;
+        margin: 4rem 0rem 0rem 0rem;
+        height: 22rem;
+    }
+    .flex .fourth-img img{
+        width:35.5rem;
+        height: 20.5rem;
+    }
+    .last-section .slide-text p{
+        margin: 5rem 0rem 2rem 3.5rem;
+    }
+    .last-section .slide {
+        margin: 2rem 0rem 3rem 3.5rem;
+    }
+    .footer-row .row-list{
+        display: inline-flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin:0rem 0rem 0rem 2rem;
+        flex-wrap: wrap;
+    }
+    .row-list .list-one {
+        display: inline-flex;
+        flex-direction: column;
+        list-style-type: none;
+        gap:0.6rem;
+        margin:0rem 0rem 0rem 1.5rem;
+        flex-wrap: wrap;
+        }
+        .row-list .list-two{
+            margin: 0rem 0rem 1rem 12rem;
+        }
+}
+    @media screen and (max-width:1100px){
+        #top-nav{
+            width: 100%;
+           }
+           .nav ul{
+            gap:1rem;
+           }
+           .nav ul li a{
+            font-size: 13px;
+           }
+           .nav ul li.widden{
+            margin:0rem 0rem 0rem 0rem;
+           }
+           .nav ul li.to-remove{
+            display: none;
+           }
+           #top-nav button {
+            margin:0rem 0rem 0rem 1.5rem;
+            font-size: 14px ;
+           }
+           .center-main h1{
+            font-size: 37px;
+            font-weight: 400;
+        }
+           .center-main p {
+            font-size: 21px;
+            font-weight: 400;
+        }
+        .second-main{
+            margin:2rem 0rem 0rem 3rem;
+        }
+        .second-main .text{
+           width: 46rem;
+            height: 3.15rem;
+            border-radius: 25px;
+            border: 1px solid rgb(97, 97, 97);
+            text-align: left;
+            padding-left: 20px;
+        } 
+           section .grid {
+            display: grid;
+            grid-template-columns:29rem 29rem;
+            gap:2rem;
+            margin:4rem 0rem 0rem 2rem;
+        } 
+         section .grid .all-one{
+            height:37rem;
+        }
+        .grid .all-one .one .sub-one{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 3rem -0.5rem 0rem 3rem;
+            width:11rem;
+            flex-wrap: wrap;
+        }
+        .grid .all-one .one .sub-one h2{
+            font-size: 25px;
+            line-height: normal;
+        }
+        .grid .one-img img {
+            width: 16rem;
+            height: 23rem;
+             margin: 6rem 0rem 0rem -3rem;
+            background-size:contain;
+        }
+     .grid .one button {
+        margin: 2rem 0rem 0rem 3rem;
+    }
+    .grid .all-two{
+        height: 37rem;
+    }
+    .grid .two-img {
+        width: 20rem;
+        min-height: 30rem;
+        margin: -2rem 0rem 0rem -1rem;
+        background-size: cover;
+    }
+    .grid .two .sub-two {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 3.5rem 0rem 0rem 2rem;
+        width:12rem;
+        flex-wrap: wrap;
+    }
+     .grid .two button {
+      width:11.5rem;
+      padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    } 
+    .grid .three-img img{
+        width: 7rem;
+        height: 8.5rem;
+        margin: 7rem 0rem 0rem 7rem;
+        background-size:90%;
+    }
+    .grid .three .sub-three p{
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .grid .three .sub-three{
+        margin: 3rem 0rem 0rem 3rem;
+        width:13rem;
+    }
+    .grid .three .sub-three p{
+        font-weight: 400;
+        font-size: 17px;
+    }
+    .grid .three .sub-three h2{
+        font-size: 33px;
+         font-weight: 400;
+    }
+    .grid .three button {
+      width: 13rem;
+      padding: 0.5rem 1rem 0.5rem 1rem;
+    }
+    .grid .all-three{
+        height: 28rem;
+    }
+    .grid .four .sub-four h2{
+        font-size: 28px; 
+        font-weight: 400;
+        width:15rem;
+    }
+    .grid .four button {
+        margin: 2rem 0rem 0rem 7rem;
+    }
+    .grid .four{
+        height: 28rem;
+    }
+    section .flex{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+       margin: 3rem 0rem 0rem 02rem;
+    }
+    .flex .first {
+        width:60rem;
+        height: 30rem;
+        }
+        .flex .first-img{
+            width:36rem;
+           margin: 4rem 0rem 0rem 0rem;
+            height: 22rem;
+        }
+        .flex .first .sub-first h2{
+            font-size: 27px;
+           }
+        .flex .first-img img{
+            width:34.5rem;
+            height: 20.5rem;
+        }
+        .flex .second {
+            width:60rem;
+            height: 38rem;
+        }
+        .flex .second .sub-second {
+            margin: 3rem 0rem 0rem 3rem;
+            width: 16rem;
+        }
+        .flex .second .second-img img{
+            width:40rem;
+            height: 24rem;
+            margin:5rem 0rem 0rem 0rem;
+        }
+        .flex .second .sub-second h2{
+         font-size: 26px;
+        }
+        .flex .third {
+            width:60rem;
+        }
+        .flex .third .sub-third{
+            width:17rem;
+        }
+        .flex .third-img{
+            width: 33rem;
+           margin:6rem 0rem 0rem 3rem;
+           height: 25rem;
+        }
+        .flex .third .sub-third h2{
+            font-size: 27px;
+           }
+        .flex .third-img img{
+            width:31rem;
+            height: 23.5rem;
+        }
+        .flex .third button {
+            margin: 1rem 0rem 0rem 0.3rem;
+        }
+        .flex .fourth {
+            width:60rem;
+        }
+        .flex .fourth .sub-fourth{
+            width:19rem;
+        }
+        .flex .fourth-img{
+            width:32rem;
+            margin:5rem 0rem 0rem 2rem;
+            height: 19rem;
+        }
+        .flex .fourth .sub-fourth h2{
+            font-size: 27px;
+           }
+        .flex .fourth-img img{
+            width:30.5rem;
+            height: 17.5rem;
+        }
+        .last-section .slide-text p{
+            font-size: 25px;
+            margin: 5rem 0rem 2rem 3.5rem;
+        }
+        .last-section .slide {
+            gap:2rem;
+            margin: 2rem 0rem 3rem 3.5rem;
+        } 
+        .slide .slide-one{
+            width:18rem;
+        }
+        .slide .slide-one p{
+            width:16rem;
+            font-size: 15px;
+            margin: 0rem 0rem 2rem 0rem;
+        }
+        .slide .slide-two{
+            width:18rem;
+        }
+        .slide .slide-two p{
+            width:16rem;
+            font-size: 15px;
+            margin: 0rem 0rem 0rem 0rem;
+        }.slide .slide-three{
+            width:18rem;
+        }
+        .slide .slide-three p{
+            width:16rem;
+            font-size: 15px;
+            margin: 0rem 0rem 1rem 0rem;
+        }    
+        .row-list .list-one {
+            display: inline-flex;
+            flex-direction: column;
+            list-style-type: none;
+            gap:0.6rem;
+            margin:0rem 0rem 0rem 1.5rem;
+            flex-wrap: wrap;
+            }
+            .row-list .list-two{
+                gap:2rem;
+                margin: 0rem 0rem 1rem 8rem;
+            } 
+        }
+        @media screen and (max-width:1000px){
+            #top-nav{
+                width: 100%;
+               }
+               .nav ul{
+                gap:1rem;
+               }
+               .nav ul li a{
+                font-size: 13px;
+               }
+               .nav ul li.widden{
+                margin:0rem 0rem 0rem 0rem;
+               }
+               .nav ul li.to-remove{
+                display: none;
+               }
+               #top-nav button {
+                margin:0rem 0rem 0rem 1.5rem;
+                font-size: 14px ;
+               }
+               .center-main h1{
+                font-size: 37px;
+                font-weight: 400;
+            }
+               .center-main p {
+                font-size: 21px;
+                font-weight: 400;
+            }
+            .second-main{
+                margin:2rem 0rem 0rem 3rem;
+            }
+            .second-main .text{
+               width: 46rem;
+                height: 3.15rem;
+                border-radius: 25px;
+                border: 1px solid rgb(97, 97, 97);
+                text-align: left;
+                padding-left: 20px;
+            } 
+               section .grid {
+                display: flex;
+                flex-direction: column;
+                gap:3rem;
+                margin:4rem 0rem 0rem 6rem;
+            } 
+             section .grid .all-one{
+                width:48rem;
+                height:27rem;
+            }
+            .grid .all-one .one .sub-one{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                margin: 3rem -0.5rem 0rem 3rem;
+                width:24rem;
+                flex-wrap: wrap;
+            }
+            .grid .all-one .one .sub-one h2{
+                font-size: 25px;
+                line-height: normal;
+            }
+            .grid .one-img img {
+                width: 16rem;
+                height: 23rem;
+                 margin: 3rem 0rem 0rem 2rem;
+                background-size:contain;
+            }
+         .grid .one button {
+            width:16rem;
+            padding: 0.5rem 0rem 0.5rem 0rem;
+            margin: 2rem 0rem 0rem 3rem;
+        }
+        .grid .all-two{
+            width:48rem;
+            height:24rem;
+        }
+        .grid .two-img {
+            min-width: 23rem;
+            min-height: 25rem;
+            margin: -2rem 3rem 0rem 0rem;
+            background-size: cover;
+        }
+        .grid .two .sub-two {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 2rem -0.5rem 0rem 2rem;
+            width:24rem;
+            flex-wrap: wrap;
+        }
+        .grid .two .sub-two p{
+            font-size: 17px;
+        }
+         .grid .two button {
+          width:16rem;
+          padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+        }
+         .grid .all-three{
+            width:48rem;
+            height:22rem;
+        }
+        .grid .three-img img{
+            width: 8rem;
+            height: 9rem;
+            margin: 4rem 0rem 0rem 14rem;
+            background-size:90%;
+        }
+        .grid .three .sub-three p{
+            font-weight: 400;
+            font-size: 16px;
+        }
+        .grid .three .sub-three{
+            margin: 2rem 0rem 0rem 3rem;
+            width:21rem;
+        }
+        .grid .three .sub-three p{
+            font-weight: 400;
+            font-size: 17px;
+        }
+        .grid .three .sub-three h2{
+            font-size: 33px;
+             font-weight: 400;
+        }
+        .grid .three button {
+          width: 14rem;
+        }
+        .grid .four{
+            width:48rem;
+            height:20rem;
+        }
+        .grid .four.sub-four{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .grid .four .sub-four h2{
+            font-size: 28px; 
+            font-weight: 400;
+            width:30rem;
+            text-align: center;
+        }
+        .grid .four .sub-four p{
+           width:42rem;
+            text-align: center;
+            font-weight: 400;
+            font-size: 17px
+           }
+        .grid .four button {
+            width:16rem;
+            margin: 2rem 0rem 0rem 16rem;
+        }
+        .grid .four .sub-four-link{
+            margin:2.5rem 0rem 0rem 0rem;
+        }
+        section .flex{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+           margin: 3rem 0rem 0rem 6rem;
+        }
+        .flex .first {
+            width:48rem;
+            height: 32rem;
+            }
+            .flex .first-img{
+                width:27rem;
+                margin:6rem 0rem 0rem 2rem;
+                height: 20rem;
+            }
+            .flex .first .sub-first{
+                width:14rem;
+            }
+            .flex .first-img img{
+                width:25rem;
+                height: 18.5rem;
+            }
+            .flex .first .sub-first h2{
+                font-size: 27px;
+               }
+            .flex .second {
+                width:48rem;
+                height: 40rem;
+            }
+            .flex .second .sub-second {
+                width:16rem;
+            }
+            .flex .second .second-img img {
+                width:28rem;
+                height: 20rem;
+                margin: 8rem 0rem 0rem 0rem;
+                background-size: contain;
+            }
+            .flex .second .sub-second h2{
+             font-size: 26px;
+            }
+            .flex .second button{
+                width: 14rem;
+                padding: 0.5rem 1rem 0.5rem 1rem;
+            }
+            .flex .third {
+                width:48rem;
+                height:41rem;
+            }
+            .flex .third .sub-third{
+                width: 15rem;
+                margin: 3rem 0rem 0rem 3rem;
+            }
+            .flex .third .sub-third p{
+                width:14rem;
+            }
+            .flex .third-img{
+                width: 26rem;
+               margin:10rem 0rem 0rem 1rem;
+               height: 20rem;
+            }
+            .flex .third .sub-third h2{
+                font-size: 27px;
+                width:14rem;
+               }
+            .flex .third-img img{
+                width:24rem;
+                height: 18.5rem;
+            }
+            .flex .third button {
+                width:14rem;
+                margin: 1rem 0rem 0rem 0.3rem;
+            }
+            .flex .fourth {
+                width:48rem;
+                height: 30rem;
+            }
+            .flex .fourth .sub-fourth{
+                width:14rem;
+            }
+            .flex .fourth-img{
+                width:27em;
+                margin:6rem 0rem 0rem 1rem;
+                height: 16rem;
+            }
+            .flex .fourth .sub-fourth h2{
+                font-size: 27px;
+               }
+            .flex .fourth-img img{
+                width:25rem;
+                height: 14.5rem;
+            }
+            .last-section .slide-text p{
+                font-size: 25px;
+                margin: 5rem 0rem 2rem 3.5rem;
+            }
+            .last-section .slide {
+                gap:1.5rem;
+                margin: 2rem 0rem 8rem 3.5rem;
+            } 
+            .slide .slide-one{
+                width:16rem;
+                height: 18rem;
+            }
+            .slide .slide-one p{
+                width:14rem;
+                font-size: 14px;
+                font-weight: 500;
+                margin: 0rem 0rem 1rem 0rem;
+            }
+            .slide .slide-two{
+                width:16rem;
+                height: 18rem;
+            }
+            .slide .slide-two p{
+                width:14rem;
+                font-size: 14px;
+                font-weight: 500;
+                margin: 0rem 0rem 0rem 0rem;
+            }.slide .slide-three{
+                width:16rem;
+                height: 18rem;
+            }
+            .slide .slide-three p{
+                width:14rem;
+                font-size: 14px;
+                font-weight: 500;
+                margin: 0rem 0rem 1rem 0rem;
+            }    
+            .row-list .list-one {
+                display: inline-flex;
+                flex-direction: column;
+                list-style-type: none;
+                gap:0.6rem;
+                margin:0rem 0rem 0rem 1.5rem;
+                flex-wrap: wrap;
+                }
+                .row-list .list-two{
+                    gap:2rem;
+                    margin: 0rem 0rem 1rem 4rem;
+                } 
+            }
+            @media screen and (max-width:900px){
+                #top-nav{
+                    width: 100%;
+                   }
+                   .nav ul{
+                    gap:1rem;
+                   }
+                   .nav ul li a{
+                    font-size: 13px;
+                   }
+                   .nav ul li.widden{
+                     display:none;
+                   }
+                   .nav ul li.to-remove{
+                    display: none;
+                   }
+                   #top-nav button {
+                    margin:0rem 0rem 0rem 1.5rem;
+                    font-size: 14px ;
+                   }
+                   .center-main h1{
+                    font-size: 36px;
+                    font-weight: 400;
+                }
+                   .center-main p {
+                    font-size: 21px;
+                    font-weight: 400;
+                }
+                .second-main{
+                    margin:2rem 0rem 0rem 3rem;
+                }
+                .second-main .text{
+                   width: 46rem;
+                    height: 3.15rem;
+                    border-radius: 25px;
+                    border: 1px solid rgb(97, 97, 97);
+                    text-align: left;
+                    padding-left: 20px;
+                } 
+                   section .grid {
+                    display: flex;
+                    flex-direction: column;
+                    gap:3rem;
+                    margin:4rem 0rem 0rem 3rem;
+                } 
+                 section .grid .all-one{
+                    width:48rem;
+                    height:27rem;
+                }
+                .grid .all-one .one .sub-one{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    margin: 3rem -0.5rem 0rem 3rem;
+                    width:24rem;
+                    flex-wrap: wrap;
+                }
+                .grid .all-one .one .sub-one h2{
+                    font-size: 25px;
+                    line-height: normal;
+                }
+                .grid .one-img img {
+                    width: 16rem;
+                    height: 23rem;
+                     margin: 3rem 0rem 0rem 2rem;
+                    background-size:contain;
+                }
+             .grid .one button {
+                width:16rem;
+                padding: 0.5rem 0rem 0.5rem 0rem;
+                margin: 2rem 0rem 0rem 3rem;
+            }
+            .grid .all-two{
+                width:48rem;
+                height:24rem;
+            }
+            .grid .two-img {
+                min-width: 23rem;
+                min-height: 25rem;
+                margin: -2rem 3rem 0rem 0rem;
+                background-size: cover;
+            }
+            .grid .two .sub-two {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                margin: 2rem -0.5rem 0rem 2rem;
+                width:24rem;
+                flex-wrap: wrap;
+            }
+            .grid .two .sub-two p{
+                font-size: 17px;
+            }
+             .grid .two button {
+              width:16rem;
+              padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+            }
+             .grid .all-three{
+                width:48rem;
+                height:22rem;
+            }
+            .grid .three-img img{
+                width: 8rem;
+                height: 9rem;
+                margin: 4rem 0rem 0rem 14rem;
+                background-size:90%;
+            }
+            .grid .three .sub-three p{
+                font-weight: 400;
+                font-size: 16px;
+            }
+            .grid .three .sub-three{
+                margin: 2rem 0rem 0rem 3rem;
+                width:21rem;
+            }
+            .grid .three .sub-three p{
+                font-weight: 400;
+                font-size: 17px;
+            }
+            .grid .three .sub-three h2{
+                font-size: 33px;
+                 font-weight: 400;
+            }
+            .grid .three button {
+              width: 14rem;
+            }
+            .grid .four{
+                width:48rem;
+                height:20rem;
+            }
+            .grid .four.sub-four{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                flex-wrap: wrap;
+            }
+            .grid .four .sub-four h2{
+                font-size: 28px; 
+                font-weight: 400;
+                width:30rem;
+                text-align: center;
+            }
+            .grid .four .sub-four p{
+               width:42rem;
+                text-align: center;
+                font-weight: 400;
+                font-size: 17px
+               }
+            .grid .four button {
+                width:16rem;
+                margin: 2rem 0rem 0rem 16rem;
+            }
+            .grid .four .sub-four-link{
+                margin:2.5rem 0rem 0rem 0rem;
+            }
+            section .flex{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+               margin: 3rem 0rem 0rem 3rem;
+            }
+            .flex .first {
+                display: flex;
+                flex-direction: column-reverse;
+                gap: 1rem;
+                width:48rem;
+                height: 46rem;
+                }
+                .flex .first-img{
+                    width:42rem;
+                    margin:0rem 0rem 1rem 3rem;
+                    height: 24rem;
+                }
+                .flex .first .sub-first{
+                    margin:0rem 0rem 4rem 2rem;
+                    width:44rem;
+                }
+                .flex .first-img img{
+                    width:40rem;
+                    height: 22.5rem;
+                }
+                .flex .first .sub-first h2{
+                    font-size: 27px;
+                   }
+                .flex .second {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    gap: 0.5rem;
+                    width:48rem;
+                    height: 54rem;
+                }
+                .flex .second .sub-second {
+                    margin: 0rem 0rem 3rem 2rem;
+                    width:42rem;
+                }
+                .flex .second .second-img img {
+                    width:44rem;
+                    height: 26rem;
+                    margin: 0rem 2rem 0rem 2rem;
+                    background-size: contain;
+                }
+                .flex .second .sub-second h2{
+                 font-size: 26px;
+                }
+                .flex .second button{
+                    width: 16rem;
+                    padding: 0.5rem 1rem 0.5rem 1rem;
+                }
+                .flex .third {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    gap: 0rem;
+                    width:48rem;
+                    height:62rem;
+                }
+                .flex .third .sub-third{
+                    margin: 0rem 0rem 3rem 3rem;
+                }
+                .flex .third .sub-third p{
+                    width:44rem;
+                }
+                .flex .third-img{
+                    width: 44rem;
+                   margin:0rem 0rem 2rem 2rem;
+                   height: 34rem;
+                }
+                .flex .third .sub-third h2{
+                    font-size: 27px;
+                    width:32rem;
+                   }
+                .flex .third-img img{
+                    width:42rem;
+                    height: 32.5rem;
+                }
+                .flex .third button {
+                    width:20rem;
+                    margin: 1rem 0rem 0rem 0rem;
+                }
+                .flex .fourth {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    gap: 0rem;
+                    width:48rem;
+                    height: 48rem;
+                }
+                .flex .fourth .sub-fourth{
+                    width:36rem;
+                    margin:0rem 0rem 2rem 2rem;
+                }
+                .flex .fourth-img{
+                    width:44rem;
+                    margin:0rem 0rem 1rem 2rem;
+                    height: 24rem;
+                }
+                .flex .fourth .sub-fourth h2{
+                    font-size: 27px;
+                    width: 24rem;
+                   }
+                .flex .fourth-img img{
+                    width:42rem;
+                    height: 22.5rem;
+                }
+                .last-section .slide-text p{
+                    font-size: 25px;
+                    margin: 5rem 0rem 2rem 3.5rem;
+                }
+                .last-section .slide {
+                    gap:1.5rem;
+                    margin: 2rem 0rem 8rem 3.5rem;
+                } 
+                .slide .slide-one{
+                    width:16rem;
+                    height: 18rem;
+                }
+                .slide .slide-one p{
+                    width:14rem;
+                    font-size: 14px;
+                    font-weight: 500;
+                    margin: 0rem 0rem 1rem 0rem;
+                }
+                .slide .slide-two{
+                    width:16rem;
+                    height: 18rem;
+                }
+                .slide .slide-two p{
+                    width:14rem;
+                    font-size: 14px;
+                    font-weight: 500;
+                    margin: 0rem 0rem 0rem 0rem;
+                }.slide .slide-three{
+                    width:16rem;
+                    height: 18rem;
+                }
+                .slide .slide-three p{
+                    width:14rem;
+                    font-size: 14px;
+                    font-weight: 500;
+                    margin: 0rem 0rem 1rem 0rem;
+                }    
+                .row-list .list-one {
+                    display: inline-flex;
+                    flex-direction: column;
+                    list-style-type: none;
+                    gap:0.6rem;
+                    margin:0rem 0rem 0rem 1.5rem;
+                    flex-wrap: wrap;
+                    }
+                    .row-list .list-two{
+                        gap:1rem;
+                        margin: 0rem 0rem 1rem 2rem;
+                    } 
+                }
+                @media screen and (max-width:800px){
+                    #top-nav{
+                        width: 100%;
+                       }
+                       .nav ul{
+                        gap:1rem;
+                       }
+                       .nav ul li a{
+                        font-size: 13px;
+                       }
+                       .nav ul li.widden{
+                         display:none;
+                       }
+                       .nav ul li.to-remove{
+                        display: none;
+                       }
+                       #top-nav button {
+                        margin:0rem 0rem 0rem 1.5rem;
+                        font-size: 14px ;
+                       }
+                       .center-main h1{
+                        font-size: 36px;
+                        font-weight: 400;
+                    }
+                       .center-main p {
+                        font-size: 21px;
+                        font-weight: 400;
+                    }
+                    .second-main{
+                        margin:2rem 0rem 0rem 3rem;
+                    }
+                    .second-main .text{
+                       width: 42rem;
+                        height: 3.15rem;
+                        border-radius: 25px;
+                        border: 1px solid rgb(97, 97, 97);
+                        text-align: left;
+                        padding-left: 20px;
+                    } 
+                       section .grid {
+                        display: flex;
+                        flex-direction: column;
+                        gap:3rem;
+                        margin:4rem 0rem 0rem 1.5rem;
+                    } 
+                     section .grid .all-one{
+                        width:44rem;
+                        height:27rem;
+                    }
+                    .grid .all-one .one .sub-one{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+                        margin: 3rem 0rem 0rem 2rem;
+                        width:23rem;
+                        flex-wrap: wrap;
+                    }
+                    .grid .all-one .one .sub-one h2{
+                        font-size: 25px;
+                        line-height: normal;
+                    }
+                    .grid .one-img img {
+                        width: 16rem;
+                        height: 23rem;
+                         margin: 3rem 0rem 0rem 0rem;
+                        background-size:contain;
+                    }
+                 .grid .one button {
+                    width:16rem;
+                    padding: 0.5rem 0rem 0.5rem 0rem;
+                    margin: 2rem 0rem 0rem 2rem;
+                }
+                .grid .all-two{
+                    width:44rem;
+                    height:24rem;
+                }
+                .grid .two-img {
+                    min-width: 22rem;
+                    min-height: 25rem;
+                    margin: -2rem 0rem 0rem 0rem;
+                    background-size: cover;
+                }
+                .grid .two .sub-two {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    margin: 2rem -3.5rem 0rem 2rem;
+                    width:24rem;
+                    flex-wrap: wrap;
+                }
+                .grid .two .sub-two p{
+                    font-size: 17px;
+                }
+                 .grid .two button {
+                  width:16rem;
+                  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+                }
+                 .grid .all-three{
+                    width:44rem;
+                    height:22rem;
+                }
+                .grid .three-img img{
+                    width: 8rem;
+                    height: 9rem;
+                    margin: 4rem 0rem 0rem 10rem;
+                    background-size:90%;
+                }
+                .grid .three .sub-three p{
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+                .grid .three .sub-three{
+                    margin: 2rem 0rem 0rem 3rem;
+                    width:21rem;
+                }
+                .grid .three .sub-three p{
+                    font-weight: 400;
+                    font-size: 17px;
+                }
+                .grid .three .sub-three h2{
+                    font-size: 33px;
+                     font-weight: 400;
+                }
+                .grid .three button {
+                  width: 14rem;
+                }
+                .grid .four{
+                    width:44rem;
+                    height:20rem;
+                }
+                .grid .four.sub-four{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    flex-wrap: wrap;
+                }
+                .grid .four .sub-four h2{
+                    font-size: 28px; 
+                    font-weight: 400;
+                    width:30rem;
+                    text-align: center;
+                }
+                .grid .four .sub-four p{
+                   width:40rem;
+                    text-align: center;
+                    font-weight: 400;
+                    font-size: 17px
+                   }
+                .grid .four button {
+                    width:16rem;
+                    margin: 2rem 0rem 0rem 14rem;
+                }
+                .grid .four .sub-four-link{
+                    margin:2.5rem 0rem 0rem 0rem;
+                }
+                section .flex{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                   margin: 3rem 0rem 0rem 1.5rem;
+                }
+                .flex .first {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    flex-wrap: wrap;
+                    gap: 1rem;
+                    width:44rem;
+                    height: 48rem;
+                    }
+                    .flex .first-img{
+                        width:40rem;
+                        margin:0rem 0rem 1rem 2rem;
+                        height: 24rem;
+                    }
+                    .flex .first .sub-first{
+                        margin:0rem 0rem 4rem 2rem;
+                    }
+                    .flex .first-img img{
+                        width:38rem;
+                        height: 22.5rem;
+                    }
+                    .flex .first .sub-first h2{
+                        font-size: 27px;
+                        width:30rem;
+                       }
+                       .flex .first .sub-first p{
+                        width:40rem;
+                       }
+                    .flex .second {
+                        display: flex;
+                        flex-direction: column-reverse;
+                        gap: 0.5rem;
+                        width:44rem;
+                        height: 52rem;
+                        flex-wrap: wrap;
+                    }
+                    .flex .second .sub-second {
+                        margin: 0rem 0rem 3rem 2rem;
+                        width:40rem;
+                    }
+                    .flex .second .second-img img {
+                        width:42rem;
+                        height: 24rem;
+                        margin: 0rem 2rem 0rem 2rem;
+                        background-size: contain;
+                    }
+                    .flex .second .sub-second h2{
+                     font-size: 26px;
+                    }
+                    .flex .second button{
+                        width: 16rem;
+                        padding: 0.5rem 1rem 0.5rem 1rem;
+                    }
+                    .flex .third {
+                        display: flex;
+                        flex-direction: column-reverse;
+                        flex-wrap: wrap;
+                        gap: 0rem;
+                        width:44rem;
+                        height:62rem;
+                    }
+                    .flex .third .sub-third{
+                        width:fit-content;
+                    }
+                    .flex .third-img {
+                        width:40rem;
+                    }
+                    .flex .third-img img{
+                        width:38rem;
+                    }
+                    .flex .fourth {
+                        display: flex;
+                        flex-direction: column-reverse;
+                        gap: 0rem;
+                        width:44rem;
+                        height: 48rem;
+                    }
+                    .flex .fourth .sub-fourth{
+                        width:36rem;
+                        margin:0rem 0rem 2rem 2rem;
+                    }
+                    .flex .fourth-img{
+                        width:40rem;
+                        margin:0rem 0rem 1rem 2rem;
+                        height: 24rem;
+                    }
+                    .flex .fourth .sub-fourth h2{
+                        font-size: 27px;
+                        width: 24rem;
+                       }
+                    .flex .fourth-img img{
+                        width:38rem;
+                        height: 22.5rem;
+                    }
+                    .last-section .slide-text p{
+                        font-size: 25px;
+                        padding: 0rem 0rem 0rem 0rem;
+                        margin: 0rem 0rem 0rem 3.5rem;
+                    }
+                    .last-section .slide {
+                        gap:1.5rem;
+                        padding: 0rem 0rem 0rem 0rem;
+                        margin: 0rem 0rem 0rem 0rem;
+                    } 
+                    .slide .slide-one{
+                        width:20rem;
+                        height: 16rem;
+                    }
+                    .slide .slide-one p{
+                        width:16rem;
+                        font-size: 14px;
+                        font-weight: 400;
+                        margin: 0rem 0rem 0rem 0rem;
+                    }
+                    .slide .slide-two{
+                        width:20rem;
+                        height: 16rem;
+                    }
+                    .slide .slide-two p{
+                        width:16rem;
+                        font-size: 14px;
+                        font-weight: 400;
+                        margin: 0rem 0rem -1rem 0rem;
+                    }.slide .slide-three{
+                        width:20rem;
+                        height: 16rem;
+                    }
+                    .slide .slide-three p{
+                        width:17rem;
+                        font-size: 14px;
+                        font-weight: 400;
+                        margin: 0rem 0rem -1rem 0rem;
+                    }    
+                    .row-list .list-one {
+                        display: inline-flex;
+                        flex-direction: column;
+                        list-style-type: none;
+                        gap:0.6rem;
+                        margin:0rem 0rem 0rem 1.5rem;
+                        flex-wrap: wrap;
+                        }
+                        .row-list .list-two{
+                            gap:1rem;
+                            margin: 0rem 0rem 1rem 1rem;
+                        } 
+                    }
+                    @media screen and (max-width:700px){
+                        #top-nav{
+                            width: 100%;
+                           }
+                           .nav ul{
+                            gap:1rem;
+                           }
+                           .nav ul li a{
+                            font-size: 13px;
+                           }
+                           .nav ul li.widden{
+                             display:none;
+                           }
+                           .nav ul li.to-remove{
+                            display: none;
+                           }
+                           #top-nav button {
+                            margin:0rem 0rem 0rem 1.5rem;
+                            font-size: 14px ;
+                           }
+                           .center-main h1{
+                            font-size: 36px;
+                            font-weight: 400;
+                        }
+                           .center-main p {
+                            font-size: 21px;
+                            width:28rem;
+                            text-align: center;
+                            font-weight: 400;
+                        }
+                        .second-main{
+                            margin:2rem 0rem 0rem 3rem;
+                        }
+                        .second-main .text{
+                           width: 32rem;
+                            height: 3.15rem;
+                            border-radius: 25px;
+                            border: 1px solid rgb(97, 97, 97);
+                            text-align: center;
+                            padding-left: 20px;
+                        } 
+                        ::placeholder{
+                            font-size: 0px;
+                        }
+                           section .grid {
+                            display: flex;
+                            flex-direction: column;
+                            gap:3rem;
+                            margin:4rem 0rem 0rem 1.5rem;
+                        } 
+                         section .grid .all-one{
+                            width:38rem;
+                            height:27rem;
+                        }
+                        .grid .all-one .one .sub-one{
+                            display: flex;
+                            flex-direction: column;
+                            margin: 3rem 0rem 0rem 2rem;
+                            width:20rem;
+                            flex-wrap: wrap;
+                        }
+                        .grid .all-one .one .sub-one h2{
+                            font-size: 25px;
+                            line-height: normal;
+                        }
+                        .grid .one-img img {
+                            width: 16rem;
+                            height: 23rem;
+                             margin: 3rem 0rem 0rem -1rem;
+                            background-size:contain;
+                        }
+                     .grid .one button {
+                        width:16rem;
+                        padding: 0.5rem 0rem 0.5rem 0rem;
+                        margin: 2rem 0rem 0rem 2rem;
+                    }
+                    .grid .all-two{
+                        width:38rem;
+                        height:24rem;
+                    }
+                    .grid .two-img {
+                        min-width: 0rem;
+                        min-height: 25rem;
+                        padding: 0rem 0rem 0rem 0rem;
+                    }
+                    .grid .two .sub-two {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0rem;
+                        padding: 0rem 0rem 0rem 0rem;
+                    
+                    }
+                    .grid .two .sub-two p{
+                        font-size: 17px;
+                    }
+                     .grid .two button {
+                      width:16rem;
+                      padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+                    }
+                     .grid .all-three{
+                        display: flex;
+                        flex-direction: row;
+                        width:38rem;
+                        height:22rem;
+                        gap: 3rem;
+                    }
+                    .grid .three-img img{
+                        width: 8rem;
+                        height: 9rem;
+                        margin: 0rem 0rem 0rem 3rem;
+                        padding: 0rem 0rem 0rem 0rem;
+                        background-size:100%;
+                    }
+                    .grid .three .sub-three p{
+                        font-weight: 400;
+                        font-size: 16px;
+                    }
+                    .grid .three .sub-three{
+                        width:20rem;
+                        padding: 0rem 0rem 0rem 0rem;
+                    }
+                    .grid .three .sub-three p{
+                        font-weight: 400;
+                        font-size: 17px;
+                    }
+                    .grid .three .sub-three h2{
+                        font-size: 33px;
+                         font-weight: 400;
+                    }
+                    .grid .three button {
+                     width: 15rem;
+                    }
+                    .grid .four{
+                        width:38rem;
+                        height:20rem;
+                    }
+                    .grid .four.sub-four{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+                        flex-wrap: wrap;
+                        margin:0rem 0rem 0rem 0rem;
+                    }
+                    .grid .four .sub-four h2{
+                        font-size: 24px; 
+                        font-weight: 400;
+                        width:30rem;
+                        text-align: center;
+                        margin:0rem 0rem 0rem 0rem;
+                    }
+                    .grid .four .sub-four p{
+                       width:27rem;
+                        text-align: center;
+                        font-weight: 400;
+                        font-size: 17px
+                       }
+                    .grid .four button {
+                        width:16rem;
+                        margin: 2rem 0rem 0rem 11rem;
+                    }
+                    .grid .four .sub-four-link{
+                        margin:2rem 0rem 2rem 0rem;
+                    }
+                    section .flex{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 2rem;
+                       margin: 3rem 0rem 0rem 1.5rem;
+                    }
+                    .flex .first {
+                        display: flex;
+                        flex-direction: column-reverse;
+                        gap: 1rem;
+                        width:38rem;
+                        height: 43rem;
+                        }
+                        .flex .first-img{
+                            width:34rem;
+                            margin:0rem 0rem 1rem 2rem;
+                            height: 20rem;
+                        }
+                        .flex .first .sub-first{
+                            margin:0rem 0rem 4rem 2rem;
+                        }
+                        .flex .first-img img{
+                            width:32rem;
+                            height: 18.5rem;
+                        }
+                        .flex .first .sub-first h2{
+                            font-size: 27px;
+                            width:30rem;
+                           }
+                           .flex .first .sub-first p{
+                            width:30rem;
+                           }
+                        .flex .second {
+                            display: flex;
+                            flex-direction: column-reverse;
+                            gap: 0.5rem;
+                            width:38rem;
+                            height: 48rem;
+                        }
+                        .flex .second .sub-second {
+                            margin: 0rem 0rem 3rem 2rem;
+                            width:32rem;
+                        }
+                        .flex .second .second-img img {
+                            width:32rem;
+                            height: 20rem;
+                            margin: 0rem 2rem 0rem 2rem;
+                            background-size: contain;
+                        }
+                        .flex .second .sub-second h2{
+                         font-size: 26px;
+                        }
+                        .flex .second button{
+                            width: 16rem;
+                            padding: 0.5rem 1rem 0.5rem 1rem;
+                        }
+                        .flex .third {
+                            display: flex;
+                            flex-direction: column-reverse;
+                            width:38rem;
+                            height:57rem;
+                        }
+                        .flex .third .sub-third{
+                            display:flex;
+                            flex-direction: column;
+                            gap: 1rem;
+                            text-align: left;
+                            width: 25rem;
+                            margin: 9rem 0rem 0rem 3rem;
+                            flex-wrap: wrap;
+                        }
+                        .flex .third-img {
+                            background-color: rgb(255, 255, 255);
+                            position: relative;
+                            width:50rem;
+                            height: 37rem;
+                            margin:3rem 0rem 0rem 3rem;
+                            border-radius:17px;
+                            outline: 0.01px solid rgb(225, 225, 225);
+                            box-shadow: 0px 0.6px 16px 1px rgb(213, 213, 213);
+                            background-size:contain;
+                            background-repeat: repeat;
+                        }
+                        .flex .third .sub-third h2{
+                            font-size: 33px;
+                            font-weight: 400;
+                           }
+                           .flex .third .sub-third p{
+                            font-weight: 400; 
+                            font-size: 18px;
+                           }
+                        .flex .third-img img{
+                            position: relative;
+                            width:48.5rem;
+                            height: 35.5rem;
+                            border-radius: 6px;
+                            margin:0.7rem 0.5rem 0.5rem 0.5rem;;
+                        }
+                        .flex .third button {
+                            background-color: rgb(21, 20, 20);
+                            border-radius: 7px;
+                            border: 1px solid black;
+                            width: 20rem;
+                            padding: 7px 5px 8px 5px;
+                            font-size: 17px;
+                            font-weight: 400;
+                            margin: 1rem 0rem 0rem 0.3rem;
+                            transition: all 0.25s linear 0.09s;
+                            cursor:pointer;
+                            box-shadow: 1px 1px 1px rgb(74, 74, 74);
+                        }
+                        .flex .fourth {
+                            display: flex;
+                            flex-direction: column-reverse;
+                            gap: 0rem;
+                            width:38rem;
+                            height: 50rem;
+                        }
+                        .flex .fourth .sub-fourth{
+                            width:32rem;
+                            margin:0rem 0rem 2rem 2rem;
+                        }
+                        .flex .fourth-img{
+                            width:34rem;
+                            margin:0rem 0rem 1rem 2rem;
+                            height: 24rem;
+                        }
+                        .flex .fourth .sub-fourth h2{
+                            font-size: 27px;
+                            width: 24rem;
+                           }
+                        .flex .fourth-img img{
+                            width:32.5rem;
+                            height: 22.5rem;
+                        }
+                        .last-section .slide-text p{
+                            font-size: 25px;
+                            margin: 5rem 0rem 2rem 2rem;
+                        }
+                        .last-section .slide {
+                            gap:1rem;
+                            margin: 2rem 0rem 8rem 2rem;
+                        } 
+                        .slide .slide-one{
+                            width:18rem;
+                            height: 16rem;
+                        }
+                        .slide .slide-one p{
+                            width:16rem;
+                            font-size: 14px;
+                            font-weight: 400;
+                            margin: 0rem 0rem 0rem 0rem;
+                        }
+                        .slide .slide-two{
+                            width:18rem;
+                            height: 16rem;
+                        }
+                        .slide .slide-two p{
+                            width:16rem;
+                            font-size: 14px;
+                            font-weight: 400;
+                            margin: 0rem 0rem -1rem 0rem;
+                        }.slide .slide-three{
+                            width:18rem;
+                            height: 16rem;
+                        }
+                        .slide .slide-three p{
+                            width:17rem;
+                            font-size: 14px;
+                            font-weight: 400;
+                            margin: 0rem 0rem -1rem 0rem;
+                        } 
+                        .footer-column{
+                            display: flex;
+                            flex-direction: row;
+                            gap:4rem;
+                            margin: 0rem 0rem 2rem 1.5rem;
+                            flex-wrap: wrap;
+                        }   
+                        .row-list .list-one {
+                            display: inline-flex;
+                            flex-direction: column;
+                            list-style-type: none;
+                            gap:0.6rem;
+                            margin:0rem 0rem 0rem 0rem;
+                            flex-wrap: wrap;
+                            }
+                            .row-list .list-two{
+                                gap:0.8rem;
+                                margin: 0rem 0rem 1rem 1rem;
+                            } 
+                        }
